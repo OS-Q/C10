@@ -1,0 +1,7 @@
+{
+    "description": "gcc-arm-none-eabi编译器",
+    "name": "toolchain-gccarmnoneeabi",
+    "system": "linux_x86_64",
+    "url": "https://launchpad.net/gcc-arm-embedded",
+    "version": "1.7.0"
+}
