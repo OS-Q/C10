@@ -50,8 +50,8 @@ LICENSE*
 doc
 docs
 tests
-*.mk
-*.md
+# *.mk
+# *.md
 Doxyfile
 FILES
 FEATURE*
