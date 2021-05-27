@@ -1,11 +1,14 @@
 name: CI
 
-on:
+on: # rebuild any PRs and main branch changes
+  pull_request:
   push:
-    - 'master'
+    branches:
+      - master
+      - 'releases/*'
 
 jobs:
-  boot:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
