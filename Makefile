@@ -1,15 +1,8 @@
-########+++++++++++++++++++++++++++++++++++########
-##++----  Makefile for IPoverUSB project   ----++##
-########+++++++++++++++++++++++++++++++++++########
-
 # optimization
 OPT = -O3
 DEBUG = 1
 
-TARGET = IPoverUSB
-
-# Build path
-#BUILD_DIR = build
+TARGET = IPUSB
 
 # Submodule paths
 XPD_DIR = STM32_XPD
@@ -92,7 +85,9 @@ ifeq ($(strip $(OS_DIR)),)
 
 C_INCLUDES += -IConfig
 
-BUILD_DIR = build_baremetal_$(SERIES)
+# Build path
+# BUILD_DIR = build
+BUILD_DIR = build/baremetal_$(SERIES)
 
 else ifeq ($(findstring FreeRTOS,$(OS_DIR)),FreeRTOS)
 # FreeRTOS
@@ -123,7 +118,7 @@ $(wildcard $(OS_DIR)/portable/Common/*.c) \
 $(wildcard $(OS_DIR)/portable/$(PORT_CORE)/*.c) \
 $(wildcard Core/os/*.c)
 
-BUILD_DIR = build_FreeRTOS_$(SERIES)
+BUILD_DIR = build/FreeRTOS_$(SERIES)
 
 endif
 

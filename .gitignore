@@ -46,7 +46,7 @@ LICENSE*
 *.gif
 *.rst
 *.htm*
-.travis.yml
+# .travis.yml
 doc
 docs
 tests

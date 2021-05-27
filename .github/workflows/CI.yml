@@ -25,7 +25,7 @@ jobs:
         run: |
           make all
 
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: bootloader
-      #     path: src/bootloader
+      - uses: actions/upload-artifact@v2
+        with:
+          name: IPUSB
+          path: build
