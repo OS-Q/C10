@@ -34,11 +34,11 @@ LICENSE*
 *_sc*
 *cm23*
 *cm33*
-*cm3*
-*cm4*
-*cm7*
-*cm1*
-*cm0*
+# *cm3*
+# *cm4*
+# *cm7*
+# *cm1*
+# *cm0*
 *.uvgu*
 .gitmodules
 *.png
@@ -59,7 +59,7 @@ UPGRAD*
 README*
 *.so
 *.dcm
-*.yml
+# *.yml
 # *32f100*
 # *32f101*
 # *32f102*
